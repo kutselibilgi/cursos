@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build files
+build/
+dist/
+*.log
+*.pid
+*.pid.lock
+
+# Dependencies
+.pnp/
+.pnp.js
+yarn.lock
+
+# Environment variables
+.env
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and debugging
+logs/
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db

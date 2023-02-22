@@ -1,5 +1,5 @@
-docker build -t my-app . &&
-docker run  --name my-app --rm \
+docker build -t hello_world_image . &&
+docker run  --name hello_world_container --rm \
 --volume $(pwd):/app \
 -p 3000:3000 \
-my-app
+hello_world_image

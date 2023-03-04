@@ -32,6 +32,7 @@ const name = "Matheus"
 logName()
 console.log(name);
 
+
 // 2 - arrow function
 const sum = function sum(a, b) {
     return a + b
@@ -78,5 +79,51 @@ const user = {
     }
 }
 
-user.sayUserName();
-user.sayUserNameArrow();
+// user.sayUserName();
+// user.sayUserNameArrow();
+
+
+// 3 - filter
+
+const arr = [1, 2, 3, 4 ,5];
+
+console.log(arr);
+
+const highNumber = arr.filter((number) => {
+    if(number >= 3){
+        return number;
+    }
+});
+
+console.log(highNumber);
+
+const users = [
+    { name : 'Thiago', available : true},
+    { name : 'Pedro', available : false},
+    { name : 'Amanda', available : true},
+    { name : 'Gustavo', available : false},
+];
+
+const availableUsers = users.filter((user) => user.available);
+const notAvailableUsers = users.filter((user) => !user.available);
+
+console.log(availableUsers);
+console.log(notAvailableUsers);
+
+
+// 4 - map
+const products = [
+    {name: 'Camisa', price: 10.99, category: 'Roupas'},
+    {name: 'Chaleira Elétrica', price: 49.99, category: 'Eletro'},
+    {name: 'Fogão', price: 400.99, category: 'Eletro'},
+    {name: 'Calça jeans', price: 50.99, category: 'Roupas'},
+];
+
+products.map((product) => {
+    if (product.category === 'Roupas'){
+        product.onSale = true
+    };
+});
+
+console.log(products);
+

@@ -1,7 +1,11 @@
 using Pkg
 
-packages = ["JuMP", "Clp"]
+# packages = ["HiGHS"]
 
-Pkg.add(packages)
+# Pkg.add(packages)
 
-using JuMP, Clp
+Pkg.add(PackageSpec(name="JuMP", version="1.3.0"))
+
+Pkg.add(PackageSpec(name="HiGHS", version="v1.5.0"))
+
+using JuMP, HiGHS
